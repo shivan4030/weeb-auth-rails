@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2017_08_15_172640) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer "priority", default: 0, null: false
     t.integer "attempts", default: 0, null: false
@@ -27,7 +30,7 @@ ActiveRecord::Schema.define(version: 2017_08_15_172640) do
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", id: :serial, force: :cascade do |t|
     t.string "netid"
     t.string "name"
     t.string "lastname"

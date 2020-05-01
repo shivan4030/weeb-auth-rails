@@ -36,9 +36,6 @@ GEM
       activemodel (= 5.2.3)
       activesupport (= 5.2.3)
       arel (>= 9.0)
-    activerecord-oracle_enhanced-adapter (5.2.5)
-      activerecord (~> 5.2.0)
-      ruby-plsql (>= 0.6.0)
     activestorage (5.2.3)
       actionpack (= 5.2.3)
       activerecord (= 5.2.3)
@@ -203,8 +200,6 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    ruby-oci8 (2.2.7)
-    ruby-plsql (0.7.1)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
     sassc (2.0.1)
@@ -238,7 +233,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.0)
     temple (0.8.1)
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
@@ -268,7 +262,6 @@ PLATFORMS
 
 DEPENDENCIES
   activejob_dj_overrides
-  activerecord-oracle_enhanced-adapter
   cancancan
   capybara
   database_cleaner
@@ -290,12 +283,10 @@ DEPENDENCIES
   rails
   rspec (~> 3.5)
   rspec-rails (~> 3.5)
-  ruby-oci8 (~> 2.2, >= 2.2.2)
   sassc-rails
   sinatra
   slim
   slim-rails
-  sqlite3
   therubyracer
   uglifier
   webdrivers

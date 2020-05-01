@@ -28,22 +28,26 @@ gem 'therubyracer'
 gem 'exception_notification'
 
 gem 'httpx'
+gem 'pg'
+gem 'listen'
+gem 'dotenv-rails'
+gem 'yaml_db'
 
 group :development, :dev, :preprod, :production do
-  gem 'activerecord-oracle_enhanced-adapter'
-  gem 'ruby-oci8', '~> 2.2', '>= 2.2.2'
-  gem 'pg'
+  # gem 'activerecord-oracle_enhanced-adapter'
+  # gem 'ruby-oci8', '~> 2.2', '>= 2.2.2'
+  # gem 'pg'
 end
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-  gem 'listen'
-  gem 'dotenv-rails'
+  # gem 'sqlite3'
+  # gem 'listen'
+  # gem 'dotenv-rails'
 end
 
 group :development do
-  gem 'yaml_db'
+  # gem 'yaml_db'
 end
 
 # delayed job stuff
